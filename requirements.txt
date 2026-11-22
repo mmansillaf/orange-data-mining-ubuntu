@@ -1,0 +1,10 @@
+orange3>=3.41.0
+PyQt6>=6.8.0
+PyQt6-WebEngine>=6.8.0
+scikit-learn>=1.6.0
+xgboost>=3.0.0
+numpy>=2.0.0
+scipy>=1.15.0
+matplotlib>=3.10.0
+pandas>=2.2.0
+openpyxl>=3.1.5

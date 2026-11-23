@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Analisis Colas Banco">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(60.0, 180.0)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(260.0, 60.0)" />
+		<node id="2" name="Distributions" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" project_name="Orange3" version="" title="Distributions" position="(260.0, 160.0)" />
+		<node id="3" name="Box Plot" qualified_name="Orange.widgets.visualize.owboxplot.OWBoxPlot" project_name="Orange3" version="" title="Box Plot" position="(260.0, 260.0)" />
+		<node id="4" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTree" project_name="Orange3" version="" title="Tree" position="(260.0, 360.0)" />
+		<node id="5" name="Tree Viewer" qualified_name="Orange.widgets.visualize.owtreeviewer.OWTreeViewer" project_name="Orange3" version="" title="Tree Viewer" position="(440.0, 360.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="0" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="3" source_node_id="0" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Tree" sink_channel="Tree" enabled="true" />
+	</links>
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVCgEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVkaWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMPS9ob21lL3VzdWFyaW8vRGVzY2FyZ2FzL3B5Y29kZS9vcmFuZ2UtcHJvamVjdC9iYW5jb19jb2xhcy50YWKUjAZwcmVmaXiUjACUjAdyZWxwYXRolIwPYmFuY29fY29sYXMudGFilIwFdGl0bGWUaA2MBXNoZWV0lGgLjAtmaWxlX2Zvcm1hdJROdWJhjBJjb250cm9sQXJlYVZpc2libGWUiIwLX192ZXJzaW9uX1+USwF1Lg==</properties>
+	</node_properties>
+</scheme>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Pipeline Clasificación Auto-Generado">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(80.0, 180.0)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(260.0, 80.0)" />
+		<node id="2" name="Distributions" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" project_name="Orange3" version="" title="Distributions" position="(260.0, 180.0)" />
+		<node id="3" name="Tree" qualified_name="Orange.widgets.model.owtree.OWTree" project_name="Orange3" version="" title="Tree" position="(260.0, 280.0)" />
+		<node id="4" name="Tree Viewer" qualified_name="Orange.widgets.visualize.owtreeviewer.OWTreeViewer" project_name="Orange3" version="" title="Tree Viewer" position="(440.0, 280.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="2" source_node_id="0" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" />
+		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Tree" sink_channel="Tree" enabled="true" />
+	</links>
+</scheme>
